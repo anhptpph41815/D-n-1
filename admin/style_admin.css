@@ -1,0 +1,211 @@
+/* Trang chủ admin */
+.admin {
+  width: 100%;
+}
+.admin main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.admin main .main_left {
+  width: 20%;
+  /* background-color: #4e73df; */
+  background-color: #000;
+}
+.admin main .main_left .logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.admin main .main_left ul {
+  padding: 20px 0 10px 10px;
+  list-style: none;
+}
+.admin main .main_left ul li {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.admin main .main_left ul li a {
+  text-decoration: none;
+  padding: 0px 10px 30px 10px;
+  font-size: 15px;
+  color: #ffffffcc;
+}
+.admin main .main_left ul li a i {
+  font-size: 20px;
+  width: 40px;
+}
+.admin main .main_left ul li a:hover {
+  color: rgb(233, 156, 14);
+}
+
+.admin main .main_right {
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* background-color:#f8f9fc; */
+  background-color: #e3e3e9;
+  color: black;
+}
+.admin main .main_right .head {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 20px;
+}
+.admin main .main_right .head .form {
+  width: 60%;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.admin main .main_right .head .form input[type="text"]{
+  width: 400px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  height:30px;
+  padding:10px;
+  background-color:rgb(234, 229, 229);
+}
+.admin main .main_right .head .form button{
+    border-radius: 5px;
+   background-color: #4e73df;
+}
+.admin main .main_right .head .option {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+  padding: 0 40px;
+}
+.admin main .main_right .head .option i {
+  line-height: 70px;
+}
+.admin main .main_right .head .option i:hover {
+  color: orangered;
+}
+.admin main .main_right .head .option h6 {
+  line-height: 70px;
+}
+.admin main .main_right .head .option .user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 70px;
+}
+.admin main .main_right .head .option .user .hinh {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+.admin main .main_right .head .option .user .hinh img {
+  width: 40px;
+}
+/* .admin main .main_right .head .form_admin{
+    width: 400px;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  .admin main .main_right .head .form_admin input[type="text"]{
+    width: 200px;
+  }
+   
+  .admin main .main_right .head .form_admin input[type="submit"]{
+    width: 100px;
+  } */
+
+.main_right .content {
+  padding: 0 30px 0 30px;
+  min-height: 700px;
+}
+.main_right .content .row table thead th {
+  background-color: rgb(255, 166, 0);
+}
+
+.admin main .main_right .boxes {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.admin main .main_right .boxes .box {
+  padding: 10px;
+  width: 190px;
+  background-color: #fff;
+  border: 1px solid #e3e6f0;
+  border-radius: 5px;
+  text-align: center;
+}
+.admin main .main_right .boxes .box:nth-child(1) {
+  border-left: 5px solid rgb(78, 115, 223);
+}
+.admin main .main_right .boxes .box:nth-child(2) {
+  border-left: 5px solid rgb(28, 200, 138);
+}
+.admin main .main_right .boxes .box:nth-child(3) {
+  border-left: 5px solid rgb(54, 185, 204);
+}
+.admin main .main_right .boxes .box:nth-child(4) {
+  border-left: 5px solid rgb(246, 194, 62);
+}
+.admin main .main_right .chart {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.admin main .main_right .chart .chart_left {
+  border: 1px solid #e3e6f0;
+  border-radius: 5px;
+  width: 60%;
+  height: 450px;
+  margin-right: 5%;
+  background-color: #fff;
+  padding: 10px;
+}
+.admin main .main_right .chart .chart_right {
+  border: 1px solid #e3e6f0;
+  border-radius: 5px;
+  width: 35%;
+  height: 450px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.admin main .main_right footer {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  color: orangered;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 25, 25, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: #fff;
+  padding:20px 50px;
+  border-radius: 5px;
+}
+.popup input[type="text"]{
+  padding:0  10px;
+  margin-bottom: 10px;
+}
